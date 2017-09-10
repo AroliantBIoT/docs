@@ -1,0 +1,19 @@
+title: Compile.work - Tutorials & Compilation Guides
+description: >
+  Tutorials and Compilation Guides for the Popular Programming Languages. Installing, Setup, Running the compiler Online as well as Offline.
+baseurl: ""
+#url: "http://127.0.0.1:4000"
+url: "https://aroliantbiot.gtihub.io/docs"
+twitter_username: aroliant
+github_username:  aroliant
+
+markdown: kramdown
+theme: minima
+
+collections:
+  docs:
+    output: true
+    permalink: /:name/
+
+sass:
+    sass_dir: _sass

@@ -1,0 +1,30 @@
+<footer class="site-footer">
+
+    <div class=""> 
+<p>This work is licensed under a <a  href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a></p>
+
+        <ul>
+            <li><a href="https://www.aroliant.com/contact/" >Report an Error</a></li>
+            <li><a href="https://www.aroliant.com/contact/" >Request a Tutorial</a></li>
+            <li><a href="https://www.aroliant.com/legal/privacy-policy/" >Privacy Policy</a></li>
+        </ul>        
+    </div>
+    <img src="/images/arol.png">
+    <p>&copy; Aroliant 2016</p>
+</footer>
+
+<script src="{{ site.url }}/js/jquery.min.js"></script>
+<script src="{{ site.url }}/js/rrssb.min.js"></script>
+
+{% if page.title %}
+    <script src="{{ site.url }}/js/anchor.min.js"></script>
+    <script>
+    anchors.options.placement = 'right'
+    anchors.options.class = 'hide'
+    anchors.add()
+    anchors.remove('.post-title')
+    </script>
+{% endif %}
+{% if site.tracking_id %}
+    {% include analytics.html %}
+{% endif %}
